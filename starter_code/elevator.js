@@ -26,11 +26,20 @@ class Elevator {
   _passengersLeave() { }
 
   floorUp() {
-   this.direction = up;
-   return this.direction;
+    while (this.floor < this.MAXFLOOR){
+      this.floor += 1;
+      this.update();
+    }
+    this.floorDown();
   }
 
-  floorDown() { }
+  floorDown() {
+  while (this.floor > 0){
+    this.floor -= 1;
+    this.update();
+  }
+  }
+
   call() { }
 
   log() {
