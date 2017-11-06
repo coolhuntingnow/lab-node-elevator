@@ -4,6 +4,7 @@ class Elevator {
     this.MAXFLOOR   = 10;
     this.requests   = [];
   }
+  
 
   start() { }
   stop() { }
