@@ -7,4 +7,4 @@ let person = new Person();
 
 
 elevator.call(person);
-console.log(elevator.requests);
+//console.log(elevator.waitingList);
